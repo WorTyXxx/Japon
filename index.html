@@ -1,0 +1,244 @@
+<html>
+	<head>
+
+<meta charset="utf-8" />
+  <title>Le Japon</title>
+   <link rel="stylesheet" href="site_web_japon_style.css"/>
+<script src="jquery3.js"></script>
+<link rel="icon" href="flagjapon.png" />
+	</head>
+<body>
+
+ <div class="wrapper">
+      <span id="button" class="button appear"><h2>JAPON</h2></span>
+				
+<div id="popup1">
+</div>
+
+<div id="text1"></br>
+<p><h1><u>SON HISTOIRE</u></h1></br></br>
+L’histoire du Japon commence avec le peuplement dénisovien d'un groupe d'îles au sud-est de la péninsule coréenne, environ 100 000 ans av. J.-C. Les plus anciennes traces d'industrie, des pierres polies, remontent à 32 000 ans. Des poteries, parmi les plus anciennes, sont produites vers 13 000 ans avant notre ère lors de la période Jōmon, et comprennent les premières formes d'œuvres artistiques : les dogū. 400 ans avant notre ère, au cours de la période Yayoi, sont introduites des technologies venant de Chine et de Corée comme la riziculture et la fonte du bronze et du fer.
+ Si vous le souhaitez vous pouvez <a href="https://fr.wikipedia.org/wiki/Histoire_du_Japon" title="lire la suite sur l'histoire du Japon">lire la suite</a> ou cliquer sur l'image ci-dessous.
+</br></br><a href="https://fr.wikipedia.org/wiki/Histoire_du_Japon" title="lire la suite sur l'histoire du Japon">
+<img class="hokusai" id="hokusai" src="hokusai.jpg">
+</a></br></br>
+Tokyo passe de deux millions d'habitants en 1905 à 5,5 millions en 1935, se hissant au même niveau que Londres ou New York336. Cette poussée démographique est aussi notable à Hokkaidō qui, de région nouvellement colonisée, se peuple jusqu'à atteindre un niveau comparable aux autres régions de peuplement plus ancien.
+</p>
+</div>
+
+<div id="popup2"></div>
+
+<div id="text2">
+<p><h1><u>SON AVANCÉ TECHNOLOGIQUE</u></h1></br></p>
+<p>Cela ne surprendra aucun internaute, le Japon est particulièrement reconnu pour ses nombreuses innovations technologiques. En effet, comment parler de ce pays sans évoquer, par exemple, le magnifique quartier d’Akihabara (Tokyo) ou encore les nombreux bureaux et laboratoires localisés à Osaka ? La culture nippone semble effectivement liée à l’avancée technologique et ne cesse de secouer périodiquement de nombreux marchés tels que le monde vidéoludique en encore celui de la cybersécurité (VPN, …).
+ Si vous le souhaitez vous pouvez <a href="https://www.japoninfos.com/les-technologies-made-in-japan-les-plus-marquantes.html" title="lire la suite sur l'avancé technologique du Japon">lire la suite</a> ou cliquer sur l'image </br> ci-dessous.
+</br></br><a href="https://www.japoninfos.com/les-technologies-made-in-japan-les-plus-marquantes.html" title="lire la suite sur l'avancé technologique du Japon">
+<img class="tech" id="tech" src="tech.jpg"></a></br></br>
+Le Japon reste un acteur majeur concernant l’innovation technologique de nombreux marchés. L’année 2021 sera donc, sans aucun doute, marquée par de nouveaux produits tout aussi surprenants qu’attrayants pour le plus grand bonheur du monde médical, vidéoludique ou encore la cybersécurité. </p>
+</div>
+
+<button id="button-27" class="button-27"><h4>retour</h4></button>
+
+</body>
+
+<style>
+  
+body {
+position:relative;
+background-image : url("japon.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+background-color:black;
+ overflow: hidden;
+}
+
+
+
+#popup1{
+	box-shadow: 10px 5px 5px black;
+	position:absolute;
+	visibility:hidden;
+	font-family: sans-serif;
+	width:300px;
+	height:905px;
+	opacity:0.5;
+	background-color:black;
+	top:-85px;
+	left:-10px;
+}
+
+#text1{
+	position:absolute;
+	text-shadow: 4px 4px 5px black;
+	text-align: center;
+	visibility:hidden;
+	font-family: sans-serif;
+	color:#73c2ff;
+	width:300px;
+	height:800px;
+	background-color:transparent;
+	top:-85px;
+	left:-10px;
+}
+
+#text2{
+	text-shadow: 4px 4px 5px black;
+	position:absolute;
+	text-align: center;
+	visibility:hidden;
+	font-family: sans-serif;
+	color:#ffe96b;
+	width:300px;
+	height:800px;
+	background-color:transparent;
+	top:-85px;
+	left:1371px;
+}
+
+a {
+  color: #ff9191 ;
+}
+
+a:hover {
+  color: #91ffb4 ;
+}
+
+
+#hokusai{
+	box-shadow: 4px 4px 5px black;
+    width: 250px;
+	left:100px;
+	border-radius: 10px;
+}
+
+#hokusai:hover{
+	box-shadow: 4px 4px 5px black;
+    width: 250px;
+	left:10px;
+	border-radius: 10px;
+}
+
+#tech{
+	box-shadow: 4px 4px 5px black;
+    width: 250px;
+	border-radius: 10px;
+}
+
+#popup2{
+	box-shadow: -10px 1px 5px black;
+	position:absolute;
+	visibility:hidden;
+	z-index: -1;
+	width:300px;
+	height:905px;
+	opacity:0.5;
+	background-color:black;
+	top:-85px;
+	left:1371px;
+}
+
+#button-27{
+	position: absolute;
+    top: 750px;
+	left: 790px;
+    width: 5%;
+    height: 50%;
+    z-index: -1;
+	visibility:hidden;
+	background-color: #000000;
+	font-family: sans-serif;
+	border: 2px solid #1A1A1A;
+	border-radius: 15px;
+	color: #FFFFFF;
+	font-size: 75%;
+	transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+}
+
+.button-27:hover {
+	position:center;
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+		}
+
+.button-27:active {
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+	  .wrapper {
+        visibility:visible;
+	    margin: 80px auto;
+        text-align: center;
+        width: 100%;
+        position: relative;
+      }
+      .button {
+	    border-radius: 10px;
+	    padding: 5px 50px;
+        margin: 5px 500px;
+        color: orange;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+        border: 5px solid;
+      }
+
+      .button::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        -webkit-transform: scaleY(0.1);
+        transform: scaleY(0.1);
+        transition: all 0.3s;
+      }
+      .button:hover {
+        color: #bf6817;
+      }
+      .button:hover::before {
+        opacity: 0.3;
+        background-color: black;
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+        transition: -webkit-transform 0.6s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity 0.3s;
+        transition: transform 0.3s cubic-bezier(0.08, 0.35, 0.13, 1.02), opacity;
+      }
+
+
+</style>
+
+<script>
+ jQuery(document).ready(function(){
+
+$( "#button").click(function() {
+	$("#button" ).css("visibility","hidden");
+		$("#button-27" ).css("visibility","visible");
+			$("#popup1" ).css("visibility","visible");
+				$("#text1" ).css("visibility","visible");
+			$("#text2" ).css("visibility","visible");
+		$("#popup2" ).css("visibility","visible");
+	$("#lien1" ).css("visibility","visible");
+$("#lien2" ).css("visibility","visible");
+});	
+		
+$( "#button-27").click(function() {
+	$("#button" ).css("visibility","visible");
+		$("#button-27" ).css("visibility","hidden");
+			$("#popup1" ).css("visibility","hidden");
+				$("#text1" ).css("visibility","hidden");
+			$("#text2" ).css("visibility","hidden");
+		$("#popup2" ).css("visibility","hidden");
+	$("#lien1" ).css("visibility","hidden");
+$("#lien2" ).css("visibility","hidden");
+});			
+		
+});
+
+</script>
+
+</html>
